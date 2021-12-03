@@ -27,7 +27,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aae38583-2a76-4821-86b9-5148b1c78279" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638496990803</updated>
       <workItem from="1638496991868" duration="2535000" />
-      <workItem from="1638499535873" duration="6799000" />
+      <workItem from="1638499535873" duration="9544000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1638499641813</created>
@@ -126,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638511598339</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="complete">
+      <created>1638513349561</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638513349561</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,7 +160,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="622" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1638502548487">
@@ -165,17 +172,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638498393838" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1638513457643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1638513457643" />
     <state x="776" y="443" key="NewPhpFileDialog" timestamp="1638498079134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638498079134" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1638511602110">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1638516152986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638511602110" />
-    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1638499847308">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638516152986" />
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1638516143261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638499847308" />
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638516143261" />
   </component>
 </project>
