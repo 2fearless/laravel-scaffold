@@ -20,5 +20,12 @@
         "files": [
             "src/Support/helpers.php"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fearless\\Tool\\Provider\\ScaffoldServiceProvider"
+            ]
+        }
     }
 }
