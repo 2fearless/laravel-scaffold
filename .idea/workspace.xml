@@ -37,6 +37,9 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
@@ -74,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638496990803</updated>
       <workItem from="1638496991868" duration="2535000" />
-      <workItem from="1638499535873" duration="9544000" />
+      <workItem from="1638499535873" duration="11804000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1638499641813</created>
@@ -132,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638513349561</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="complete">
+      <created>1638517311658</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638517311658</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,10 +190,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638498079134" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1638516152986">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1638517362166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638516152986" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638517362166" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1638516143261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

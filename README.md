@@ -1,15 +1,4 @@
 #laravel脚手架,根据已有模型的表字段生成验证器过滤器等
-##安装方法
-###修改 `composer.json` 文件
-添加
-```json
- "repositories" :[
-        {
-            "type" : "git" ,
-            "url" : "git@gitee.com:q12e/laravel-scaffold.git"
-        }
-    ],
-```
 ##使用方法
 ```bash
 composer require fearless/laravel-scaffold 1.4
