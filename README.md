@@ -6,7 +6,7 @@
  "repositories" :[
         {
             "type" : "git" ,
-            "url" : "git@e.coding.net:qiujitech/scar/scar.git"
+            "url" : "git@gitee.com:q12e/laravel-scaffold.git"
         }
     ],
 ```
