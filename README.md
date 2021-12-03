@@ -1,16 +1,17 @@
-##使用方法
+##安装方法
+###修改 `composer.json` 文件
+添加
 ```json
-修改 'composer.json' 文件
-"require" : {
-    "fearless/laravel-scaffold": "1.*"
-}
  "repositories" :[
         {
             "type" : "git" ,
             "url" : "git@e.coding.net:qiujitech/scar/scar.git"
         }
     ],
-composer update
+```
+##使用方法
+```bash
+composer require fearless/laravel-scaffold 1.4
 ```
 ###迁移文件字段注释生成
 ```bash
@@ -46,18 +47,7 @@ php artisan comment
     "comment":"月报"
   }]}
 ```
-###生成该表的各种层, `type=all`代表生成全部
+###以下命令生成该表的各种层
 ```bash
-php artisan build {model} {type}
-type = [
-        model 写入模型基础配置($fillable,$casts)
-        filter 创建过滤器
-        collection 创建collection
-        admin_con 创建后台控制器
-        api_con 创建前台控制器
-        enum 创建枚举
-        request 创建验证器
-        resource 创建资源
-        service 创建服务
-   ]
+php artisan build
 ```
