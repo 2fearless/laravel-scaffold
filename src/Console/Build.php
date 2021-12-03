@@ -14,7 +14,7 @@ use Fearless\Tool\Scaffold\ModifyModel;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 
-class Build extends GeneratorCommand
+class Build extends Command
 {
     /**
      * The name and signature of the console command.

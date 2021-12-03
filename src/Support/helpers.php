@@ -138,7 +138,7 @@ if (!function_exists('guess_class_name')){
         }
 
         if (empty($values)) {
-            $values = [$prefix.'\\', self::slug($prefix).'/'];
+            $values = [$prefix.'\\', slug($prefix).'/'];
         }
 
         [$namespace, $path] = $values;
@@ -146,3 +146,19 @@ if (!function_exists('guess_class_name')){
         return base_path(str_replace([$namespace, '\\'], [$path, '/'], $class)).'.php';
     }
 }
+if (!function_exists('slug')){
+    /**
+     * @param  string  $name
+     * @param  string  $symbol
+     * @return mixed
+     */
+    function slug(string $name, string $symbol = '-')
+    {
+        $text = preg_replace_callback('/([A-Z])/', function ($text) use ($symbol) {
+            return $symbol.strtolower($text[1]);
+        }, $name);
+
+        return str_replace('_', $symbol, ltrim($text, $symbol));
+    }
+}
+
