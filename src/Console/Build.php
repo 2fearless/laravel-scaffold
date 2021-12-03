@@ -21,7 +21,7 @@ class Build extends Command
      *
      * @var string
      */
-    protected $signature = 'build {model} {type}';
+    protected $signature = 'build';
 
     /**
      * The console command description.
@@ -47,8 +47,20 @@ class Build extends Command
      */
     public function handle()
     {
-        $model = 'App\\Models\\'.Str::ucfirst($this->argument('model'));
-        $type = Str::lower($this->argument('type'));
+        $model = 'App\\Models\\'.Str::ucfirst($this->ask('请输入模型名称'));
+        $options = [
+            'all',
+            'model',
+            'filter',
+            'collection',
+            'admin_con',
+            'api_con',
+            'enum',
+            'request',
+            'resource',
+            'service'
+        ];
+        $type = Str::lower($this->choice('请选择操作类型',$options,0));
         if ($type == 'all'){
             $this->model($model);
             $this->filter($model);
