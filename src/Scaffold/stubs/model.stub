@@ -5,9 +5,10 @@ namespace DummyNamespace;
 use Illuminate\Database\Eloquent\Model;
 use EloquentFilter\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Fearless\Tool\Support\ModelTrait;
 class DummyClass extends Model
 {
-    use HasFactory, Filterable, ModelTrait, CreatedAuthModelTrait;
+    use HasFactory, Filterable, ModelTrait;
     DummyFillAble
     DummyCasts
     DummyModelTable
