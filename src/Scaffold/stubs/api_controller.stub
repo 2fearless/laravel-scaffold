@@ -1,0 +1,60 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Enums\ResponseCodeEnum;
+use App\Http\Collections\DummyCollection;
+use App\Http\Resources\DummyResource;
+use App\Services\DummyService;
+use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Jiannei\Response\Laravel\Support\Facades\Response;
+
+class DummyController extends BaseController
+{
+    /**
+     * @var DummyService
+     */
+    protected $dummyService;
+
+    /**
+     * DummyController Constructor.
+     *
+     * @param DummyService $dummyService
+     */
+    public function __construct(DummyService $dummyService)
+    {
+        $this->dummyService = $dummyService;
+    }
+
+    /**
+     * dummy列表
+     *
+     * @param Request $request
+     * @return JsonResponse
+     * @throws Exception
+     */
+    public function index(Request $request)
+    {
+        $dummy = $this->dummyService->getList($request, [
+
+        ]);
+        return Response::success(new DummyCollection($dummy), '', ResponseCodeEnum::QUERY_SUCCESS);
+    }
+
+    /**
+      * 查看dummy
+      *
+      * @param int $id
+      * @return JsonResponse
+      * @throws Exception
+      */
+    public function show(int $id)
+    {
+        $dummy = $this->dummyService->getInfo($id, [
+
+        ]);
+        return Response::success(new DummyResource($dummy), '', ResponseCodeEnum::QUERY_SUCCESS);
+    }
+}

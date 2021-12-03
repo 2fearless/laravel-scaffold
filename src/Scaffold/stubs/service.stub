@@ -1,0 +1,133 @@
+<?php
+
+namespace App\Services;
+
+use App\Models\Dummy;
+use Exception;
+use Illuminate\Http\Request;
+
+class DummyService extends BaseService
+{
+    /**
+     * 获取dummy列表
+     *
+     * @param Request $request
+     * @param array $with
+     * @param array $columns
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     * @throws Exception
+     */
+    public function getList(Request $request, array $with = [], array $columns = ['*'])
+    {
+        return Dummy::filter($request->all())->with($with)->paginate($request->get('limit', 20), $columns);
+    }
+
+    /**
+     *获取Dummy信息
+     *
+     * @param int $id
+     * @param array $with
+     * @param array $columns
+     * @return \Illuminate\Database\Eloquent\Model
+     * @throws Exception
+     */
+    public function getInfo(int $id, array $with = [], array $columns = ['*'])
+    {
+        return Dummy::with($with)->findOrFail($id, $columns);
+    }
+
+    /**
+     * 新增Dummy
+     *
+     * @param array $params
+     * @return Dummy
+     * @throws Exception
+     */
+    public function createDummy(array $params)
+    {
+        return Dummy::create([
+DummyCreate
+        ]);
+    }
+
+    /**
+     * 更新Dummy
+     *
+     * @param int $id
+     * @param array $params
+     * @return \Illuminate\Database\Eloquent\Model
+     * @throws Exception
+     */
+    public function updateDummy(int $id, array $params)
+    {
+        $dummy = $this->getInfo($id);
+        $dummy->update([
+DummyUpdate
+        ]);
+        return $dummy;
+    }
+
+    /**
+     * 更新Dummy
+     *
+     * @param int $id
+     * @param array $params
+     * @return int
+     * @throws Exception
+     */
+    public function update(int $id, array $params)
+    {
+        return Dummy::query()->where('id', $id)->update($params);
+    }
+
+    /**
+     * 删除Dummy
+     *
+     * @param int $id
+     * @return int
+     * @throws Exception
+     */
+    public function destroy(int $id)
+    {
+        return Dummy::destroy($id);
+    }
+
+    /**
+     * 查询单条Dummy
+     *
+     * @param array $where
+     * @param array $columns
+     * @return mixed
+     * @throws Exception
+     */
+    public function firstByWhere(array $where, array $columns = ['*'])
+    {
+        return Dummy::filter($where)->first($columns);
+    }
+
+    /**
+     * 查询Dummy
+     *
+     * @param array $where
+     * @param array $columns
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     * @throws Exception
+     */
+    public function getByWhere(array $where, array $columns = ['*'])
+    {
+        return Dummy::filter($where)->get($columns);
+    }
+
+    /**
+     * 批量更新Dummy
+     *
+     * @param array $where
+     * @param array $params
+     * @return int
+     * @throws Exception
+     */
+    public function updateByWhere(array $where, array $params)
+    {
+        return Dummy::filter($where)->update($params);
+    }
+}

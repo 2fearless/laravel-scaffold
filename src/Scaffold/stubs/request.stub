@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Http\Requests;
+
+class DummyRequest extends FormRequest
+{
+    protected $autoValidate = false;
+
+    public function rules()
+    {
+        return DummyRules
+    }
+
+    public function scene()
+    {
+        return [
+            'create' => DummyCreate
+            'update' => DummyUpdate
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+
+        ];
+    }
+}

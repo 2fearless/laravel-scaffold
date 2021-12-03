@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Filters;
+
+use EloquentFilter\ModelFilter;
+
+class DummyFilter extends ModelFilter
+{
+    /**
+     * Drop `_id` from the end of input keys when referencing methods.
+     *
+     * @var bool
+     */
+    protected $drop_id = false;
+
+DummyFunction
+}

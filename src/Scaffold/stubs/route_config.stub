@@ -1,0 +1,121 @@
+<?php
+
+
+namespace App\Services\Route;
+
+
+use App\Models\Dummy;
+
+class DummyRoute
+{
+    public static function before(){
+        $dummy_before = [
+            'name' => 'dummy/manage',
+            'parent_id' => 1,
+            'path' => 'dummy/manage',
+            'component' => 'dummy/manage',
+            'node' => 1,
+            'route_name' => 'dummy管理',
+            'url' => '/dummy/manage',
+            'meta_title' => 'dummy管理',
+            'meta_icon' => 'dummy',
+            'url_type' => 'get',
+            'redirect' => '/',
+            'level' => 2,
+            'meta_no_cache' => 0,
+            'always_show' => 0,
+            'button_permission' => '',
+            'hidden' => 0,
+            'type' => 'route',
+        ];
+        return $dummy_before;
+    }
+    public static function list(){
+        $dummy_before = self::before();
+        return [
+            'path'=>'dummy/index',
+            'component'=>'dummy@index',
+            'route_name' => 'dummy列表',
+            'meta_icon' => 'dummyindex',
+            'redirect' => 'index',
+            'level' => 3,
+            'type' => 'both',
+            'button_permission' => '',
+            'before' => $dummy_before
+        ];
+    }
+
+    public static function all(){
+        $dummy_before = self::before();
+        return [
+            'path'=>'dummy/all',
+            'component'=>'dummy@all',
+            'route_name' => '全部dummy',
+            'meta_icon' => 'dummyall',
+            'redirect' => 'index',
+            'level' => 3,
+            'type' => 'api',
+            'button_permission' => '',
+            'before' => $dummy_before
+        ];
+    }
+
+    public static function detail(){
+        $dummy_before = self::before();
+        return [
+            'path'=>'dummy/detail',
+            'component'=>'dummy@detail',
+            'route_name' => 'dummy详情',
+            'meta_icon' => 'dummydetail',
+            'redirect' => 'index',
+            'level' => 3,
+            'type' => 'api',
+            'button_permission' => 'detail',
+            'before' => $dummy_before
+        ];
+    }
+    public static function add(){
+        $dummy_before = self::before();
+        return [
+            'path'=>'dummy/add',
+            'component'=>'dummy@add',
+            'route_name' => '新增dummy',
+            'meta_icon' => 'dummyadd',
+            'redirect' => 'index',
+            'level' => 3,
+            'type' => 'api',
+            'button_permission' => 'add',
+            'before' => $dummy_before
+        ];
+    }
+    public static function edit(){
+        $dummy_before = self::before();
+        return [
+            'path'=>'dummy/edit',
+            'component'=>'dummy@edit',
+            'route_name' => 'dummy修改',
+            'meta_icon' => 'dummyedit',
+            'redirect' => 'index',
+            'level' => 3,
+            'type' => 'api',
+            'button_permission' => 'edit',
+            'before' => $dummy_before
+        ];
+    }
+
+    public static function delete(){
+        $dummy_before = self::before();
+        return [
+            'path'=>'dummy/delete',
+            'component'=>'dummy@delete',
+            'route_name' => 'dummy删除',
+            'meta_icon' => 'dummydelete',
+            'redirect' => 'index',
+            'level' => 3,
+            'type' => 'api',
+            'button_permission' => 'delete',
+            'before' => $dummy_before
+        ];
+    }
+
+}

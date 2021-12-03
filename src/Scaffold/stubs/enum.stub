@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Enums;
+
+final class DummyEnum extends BaseEnum
+{
+DummyConst
+
+    public static function getDescription($value): string
+    {
+        switch ($value) {
+DummyDescribe
+            default:
+                return self::getKey($value);
+        }
+    }
+}
