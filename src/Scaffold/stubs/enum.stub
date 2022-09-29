@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Enums;
-
+use Fearless\Tool\Support\BaseEnum;
 final class DummyEnum extends BaseEnum
 {
 DummyConst

@@ -11,7 +11,8 @@
     "require": {
         "php": ">=7.1.0",
         "laravel/framework": ">5.5",
-        "tucker-eric/eloquentfilter": "^3.0"
+        "tucker-eric/eloquentfilter": "^3.0",
+        "bensampo/laravel-enum": "^3.4"
     },
     "autoload": {
         "psr-4": {
