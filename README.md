@@ -1,5 +1,11 @@
 #laravel脚手架,根据已有模型的表字段生成验证器过滤器等
 ##使用方法
+
+创建模型并生成迁移
+```bash
+php artisan create:model Article -m
+```
+安装扩展
 ```bash
 composer require fearless/laravel-scaffold
 ```
@@ -37,7 +43,7 @@ php artisan comment
     "comment":"月报"
   }]}
 ```
-写入迁移文件
+将json写入迁移文件字段注释
 ```php
 $table->string('title')->comment('{"comment":"标题","enum":0,"filter":{"type":"like"},"request":{"rule":"required","create":"1","update":"1"},"resource":"1"}');
 $table->tinyInteger('status')->comment('{"comment":"状态","enum":[{"key":"OPEN","value":1,"comment":"开启"},{"key":"close","value":0,"comment":"关闭"}],"filter":{"type":"where"},"request":{"rule":"required","create":"1","update":"1"},"resource":"1"}');
@@ -48,4 +54,4 @@ $table->tinyInteger('status')->comment('{"comment":"状态","enum":[{"key":"OPEN
 ```bash
 php artisan build
 ```
-输入模型名执行命令
+输入模型名`Article`执行命令
