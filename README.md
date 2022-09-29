@@ -1,7 +1,7 @@
 #laravel脚手架,根据已有模型的表字段生成验证器过滤器等
 ##使用方法
 ```bash
-composer require fearless/laravel-scaffold 1.4
+composer require fearless/laravel-scaffold
 ```
 ###迁移文件字段注释生成
 ```bash
