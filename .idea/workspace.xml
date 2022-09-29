@@ -25,9 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aae38583-2a76-4821-86b9-5148b1c78279" name="Default Changelist" comment="fix:完善继承关系">
+    <list default="true" id="aae38583-2a76-4821-86b9-5148b1c78279" name="Default Changelist" comment="fix:更新使用说明">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scaffold/CreateFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaffold/CreateFilter.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,7 @@
       <workItem from="1659322845594" duration="1876000" />
       <workItem from="1661237908312" duration="304000" />
       <workItem from="1664436381877" duration="213000" />
-      <workItem from="1664436705534" duration="2755000" />
+      <workItem from="1664436705534" duration="4677000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1638499641813</created>
@@ -190,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664439649612</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix:更新使用说明">
+      <created>1664440426423</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664440426423</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +233,7 @@
     <MESSAGE value="simple" />
     <MESSAGE value="baseEnum 缺失" />
     <MESSAGE value="fix:完善继承关系" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:完善继承关系" />
+    <MESSAGE value="fix:更新使用说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:更新使用说明" />
   </component>
 </project>

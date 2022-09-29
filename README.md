@@ -40,7 +40,7 @@ php artisan comment
 写入迁移文件
 ```php
 $table->string('title')->comment('{"comment":"标题","enum":0,"filter":{"type":"like"},"request":{"rule":"required","create":"1","update":"1"},"resource":"1"}');
-$table->string('status')->comment('{"comment":"状态","enum":[{"key":"OPEN","value":1,"comment":"开启"},{"key":"close","value":0,"comment":"关闭"}],"filter":{"type":"where"},"request":{"rule":"required","create":"1","update":"1"},"resource":"1"}');
+$table->tinyInteger('status')->comment('{"comment":"状态","enum":[{"key":"OPEN","value":1,"comment":"开启"},{"key":"close","value":0,"comment":"关闭"}],"filter":{"type":"where"},"request":{"rule":"required","create":"1","update":"1"},"resource":"1"}');
 ```
 运行迁移
 

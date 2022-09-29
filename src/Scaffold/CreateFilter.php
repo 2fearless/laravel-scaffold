@@ -10,7 +10,7 @@ class CreateFilter extends CommonScaffold
 {
     public function create($model){
         $name = str_replace('App\\Models\\','',$model);
-        $dir = app_path('Filters');
+        $dir = app_path('ModelFilters');
         $this->dir_first($dir);
         $path = app_path('Filters/'.$name.'Filter.php');
         $stub = app('files')->get($this->getStub());
