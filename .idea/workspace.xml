@@ -25,16 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aae38583-2a76-4821-86b9-5148b1c78279" name="Default Changelist" comment="baseEnum 缺失">
-      <change afterPath="$PROJECT_DIR$/src/Support/FormRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Support/ResponseCodeEnum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Support/SceneValidator.php" afterDir="false" />
+    <list default="true" id="aae38583-2a76-4821-86b9-5148b1c78279" name="Default Changelist" comment="fix:完善继承关系">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scaffold/stubs/admin_controller.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaffold/stubs/admin_controller.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scaffold/stubs/api_controller.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaffold/stubs/api_controller.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scaffold/stubs/request.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaffold/stubs/request.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scaffold/stubs/service.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaffold/stubs/service.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +90,7 @@
       <workItem from="1659322845594" duration="1876000" />
       <workItem from="1661237908312" duration="304000" />
       <workItem from="1664436381877" duration="213000" />
-      <workItem from="1664436705534" duration="2123000" />
+      <workItem from="1664436705534" duration="2755000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1638499641813</created>
@@ -190,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664438627538</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix:完善继承关系">
+      <created>1664439649612</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664439649612</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +224,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="simple" />
     <MESSAGE value="baseEnum 缺失" />
-    <option name="LAST_COMMIT_MESSAGE" value="baseEnum 缺失" />
+    <MESSAGE value="fix:完善继承关系" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:完善继承关系" />
   </component>
 </project>
