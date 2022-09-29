@@ -25,9 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aae38583-2a76-4821-86b9-5148b1c78279" name="Default Changelist" comment="simple">
+    <list default="true" id="aae38583-2a76-4821-86b9-5148b1c78279" name="Default Changelist" comment="baseEnum 缺失">
+      <change afterPath="$PROJECT_DIR$/src/Support/FormRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Support/ResponseCodeEnum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Support/SceneValidator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scaffold/stubs/admin_controller.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaffold/stubs/admin_controller.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scaffold/stubs/api_controller.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaffold/stubs/api_controller.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scaffold/stubs/request.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaffold/stubs/request.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scaffold/stubs/service.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaffold/stubs/service.stub" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,23 +65,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/phpstudy_pro/WWW/laravel-scaffold&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/phpstudy_pro/WWW/laravel-scaffold/src/Support",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpstudy_pro\WWW\laravel-scaffold\src\Support" />
       <recent name="D:\phpstudy_pro\laravel-scaffold\src\Provider" />
       <recent name="D:\phpstudy_pro\laravel-scaffold\src\Console" />
       <recent name="D:\phpstudy_pro\laravel-scaffold" />
       <recent name="D:\phpstudy_pro\laravel-scaffold\src\Support" />
-      <recent name="D:\phpstudy_pro\laravel-scaffold\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,7 +97,7 @@
       <workItem from="1659322845594" duration="1876000" />
       <workItem from="1661237908312" duration="304000" />
       <workItem from="1664436381877" duration="213000" />
-      <workItem from="1664436705534" duration="1045000" />
+      <workItem from="1664436705534" duration="2123000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1638499641813</created>
@@ -176,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664436993538</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="baseEnum 缺失">
+      <created>1664438627538</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664438627538</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +223,7 @@
     <MESSAGE value="complete" />
     <MESSAGE value="test" />
     <MESSAGE value="simple" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple" />
+    <MESSAGE value="baseEnum 缺失" />
+    <option name="LAST_COMMIT_MESSAGE" value="baseEnum 缺失" />
   </component>
 </project>

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Enums\ResponseCodeEnum;
+use Fearless\Tool\Support\ResponseCodeEnum;
 use App\Http\Collections\DummyCollection;
 use App\Http\Resources\DummyResource;
 use App\Services\DummyService;
@@ -11,7 +11,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Jiannei\Response\Laravel\Support\Facades\Response;
 
-class DummyController extends BaseController
+class DummyController
 {
     /**
      * @var DummyService

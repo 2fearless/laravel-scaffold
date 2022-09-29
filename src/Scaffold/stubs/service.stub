@@ -6,7 +6,7 @@ use App\Models\Dummy;
 use Exception;
 use Illuminate\Http\Request;
 
-class DummyService extends BaseService
+class DummyService
 {
     /**
      * 获取dummy列表
