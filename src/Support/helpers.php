@@ -227,3 +227,34 @@ if (!function_exists('checkIdCard')){
     }
 }
 
+//------------------ array ------------------
+if (!function_exists('array_tree_module')) {
+    /**
+     * 获取树形结构列表 适用layui树形组件
+     * @param $data
+     * @param $pid
+     * @param int $deep
+     * @return array
+     */
+    function array_tree_module($data, $pid = 0, $deep = 0)
+    {
+        $tree = [];
+        foreach ($data as $row) {
+            if ($row['pid'] == $pid) {
+                $row['deep'] = $deep;
+                if ($deep > 0) {
+                    $row['spread'] = false;
+                } else {
+                    $row['spread'] = true;
+                }
+                $children = array_tree_module($data, $row['id'], $deep + 1);
+                if ($children) {
+                    $row['children'] = $children;
+                }
+                $tree[] = $row;
+            }
+        }
+        return $tree;
+    }
+}
+
